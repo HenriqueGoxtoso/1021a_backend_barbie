@@ -7,7 +7,12 @@ export default class BancoEmMemoria implements FilmeRepositorioInterface{
 
         this.dados.push(input)
         return new Promise((resolve,reject)=>{
-            setTimeout(()=>resolve(true), 1000)
+            setTimeout(()=>resolve(true), 10)
+        })
+    }
+    public listar():Promise<Filme[]>{
+        return new Promise((resolve,reject)=>{
+            resolve(this.dados)
         })
     }
 }
