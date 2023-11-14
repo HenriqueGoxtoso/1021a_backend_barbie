@@ -3,8 +3,8 @@ export default interface FilmeRepositorioInterface {
     listar(): Promise<FilmeDTO[]>;
 }
 type FilmeDTO = {
-    id:number;
-    titulo: string;
-    descricao: string;
-    foto: string;
-};
+    id: number,
+    titulo: string,
+    descricao: string,
+    foto: string
+}
