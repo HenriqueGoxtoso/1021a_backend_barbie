@@ -2,7 +2,7 @@ import BancoEmMemoria from "../infra/banco/banco-em-memoria";
 import FilmeRepositorioInterface from "./filme-repositorio-interface";
 export default class ListarFilme{
 constructor(private filmeRepositorio:FilmeRepositorioInterface){}
-public async listar():Promise<Filme[]>{
+public async execute():Promise<Filme[]>{
     return this.filmeRepositorio.listar()
 }
 }
