@@ -3,6 +3,7 @@ import ListaFilme from './aplicacao/listar-filme.use-case'
 import BancoMongoDB from './infra/banco/banco-mongodb'
 import BancoEmMemoria from './infra/banco/banco-em-memoria'
 import SalvaFilme from './aplicacao/salva-filme.use-case'
+import cors from 'cors'
 const app = express()
 const bancoMongoDB = new BancoMongoDB()
 app.use(express.json())
